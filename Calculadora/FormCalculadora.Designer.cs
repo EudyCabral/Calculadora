@@ -54,130 +54,132 @@
             this.buttonUno.Location = new System.Drawing.Point(9, 293);
             this.buttonUno.Name = "buttonUno";
             this.buttonUno.Size = new System.Drawing.Size(75, 49);
-            this.buttonUno.TabIndex = 0;
+            this.buttonUno.TabIndex = 1;
             this.buttonUno.Text = "1";
             this.buttonUno.UseVisualStyleBackColor = true;
             this.buttonUno.Click += new System.EventHandler(this.buttonUno_Click);
-            this.buttonUno.KeyUp += new System.Windows.Forms.KeyEventHandler(this.buttonUno_KeyUp);
+         
             // 
             // buttonDos
             // 
             this.buttonDos.Location = new System.Drawing.Point(90, 293);
             this.buttonDos.Name = "buttonDos";
             this.buttonDos.Size = new System.Drawing.Size(75, 49);
-            this.buttonDos.TabIndex = 1;
+            this.buttonDos.TabIndex = 2;
             this.buttonDos.Text = "2";
             this.buttonDos.UseVisualStyleBackColor = true;
             this.buttonDos.Click += new System.EventHandler(this.buttonDos_Click);
-            this.buttonDos.KeyUp += new System.Windows.Forms.KeyEventHandler(this.buttonDos_KeyUp);
+            this.buttonDos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttonnueve
             // 
             this.buttonnueve.Location = new System.Drawing.Point(173, 183);
             this.buttonnueve.Name = "buttonnueve";
             this.buttonnueve.Size = new System.Drawing.Size(75, 49);
-            this.buttonnueve.TabIndex = 2;
+            this.buttonnueve.TabIndex = 9;
             this.buttonnueve.Text = "9";
             this.buttonnueve.UseVisualStyleBackColor = true;
             this.buttonnueve.Click += new System.EventHandler(this.buttonnueve_Click);
-            this.buttonnueve.KeyUp += new System.Windows.Forms.KeyEventHandler(this.buttonnueve_KeyUp);
+            this.buttonnueve.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttonocho
             // 
             this.buttonocho.Location = new System.Drawing.Point(90, 183);
             this.buttonocho.Name = "buttonocho";
             this.buttonocho.Size = new System.Drawing.Size(75, 49);
-            this.buttonocho.TabIndex = 3;
+            this.buttonocho.TabIndex = 8;
             this.buttonocho.Text = "8";
             this.buttonocho.UseVisualStyleBackColor = true;
             this.buttonocho.Click += new System.EventHandler(this.buttonocho_Click);
-            this.buttonocho.KeyUp += new System.Windows.Forms.KeyEventHandler(this.buttonocho_KeyUp);
+            this.buttonocho.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttonsiete
             // 
             this.buttonsiete.Location = new System.Drawing.Point(9, 183);
             this.buttonsiete.Name = "buttonsiete";
             this.buttonsiete.Size = new System.Drawing.Size(75, 49);
-            this.buttonsiete.TabIndex = 4;
+            this.buttonsiete.TabIndex = 7;
             this.buttonsiete.Text = "7";
             this.buttonsiete.UseVisualStyleBackColor = true;
             this.buttonsiete.Click += new System.EventHandler(this.buttonsiete_Click);
-            this.buttonsiete.KeyUp += new System.Windows.Forms.KeyEventHandler(this.buttonsiete_KeyUp);
+            this.buttonsiete.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttonseis
             // 
             this.buttonseis.Location = new System.Drawing.Point(173, 238);
             this.buttonseis.Name = "buttonseis";
             this.buttonseis.Size = new System.Drawing.Size(75, 49);
-            this.buttonseis.TabIndex = 5;
+            this.buttonseis.TabIndex = 6;
             this.buttonseis.Text = "6";
             this.buttonseis.UseVisualStyleBackColor = true;
             this.buttonseis.Click += new System.EventHandler(this.buttonseis_Click);
-            this.buttonseis.KeyUp += new System.Windows.Forms.KeyEventHandler(this.buttonseis_KeyUp);
+            this.buttonseis.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttoncinco
             // 
             this.buttoncinco.Location = new System.Drawing.Point(90, 238);
             this.buttoncinco.Name = "buttoncinco";
             this.buttoncinco.Size = new System.Drawing.Size(75, 49);
-            this.buttoncinco.TabIndex = 6;
+            this.buttoncinco.TabIndex = 5;
             this.buttoncinco.Text = "5";
             this.buttoncinco.UseVisualStyleBackColor = true;
             this.buttoncinco.Click += new System.EventHandler(this.buttoncinco_Click);
-            this.buttoncinco.KeyUp += new System.Windows.Forms.KeyEventHandler(this.buttoncinco_KeyUp);
+            this.buttoncinco.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttoncuatro
             // 
             this.buttoncuatro.Location = new System.Drawing.Point(9, 238);
             this.buttoncuatro.Name = "buttoncuatro";
             this.buttoncuatro.Size = new System.Drawing.Size(75, 49);
-            this.buttoncuatro.TabIndex = 7;
+            this.buttoncuatro.TabIndex = 4;
             this.buttoncuatro.Text = "4";
             this.buttoncuatro.UseVisualStyleBackColor = true;
             this.buttoncuatro.Click += new System.EventHandler(this.buttoncuatro_Click);
-            this.buttoncuatro.KeyUp += new System.Windows.Forms.KeyEventHandler(this.buttoncuatro_KeyUp);
+            this.buttoncuatro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttontres
             // 
             this.buttontres.Location = new System.Drawing.Point(173, 293);
             this.buttontres.Name = "buttontres";
             this.buttontres.Size = new System.Drawing.Size(75, 49);
-            this.buttontres.TabIndex = 8;
+            this.buttontres.TabIndex = 3;
             this.buttontres.Text = "3";
             this.buttontres.UseVisualStyleBackColor = true;
             this.buttontres.Click += new System.EventHandler(this.buttontres_Click);
-            this.buttontres.KeyUp += new System.Windows.Forms.KeyEventHandler(this.buttontres_KeyUp);
+            this.buttontres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttonzero
             // 
             this.buttonzero.Location = new System.Drawing.Point(9, 348);
             this.buttonzero.Name = "buttonzero";
             this.buttonzero.Size = new System.Drawing.Size(239, 49);
-            this.buttonzero.TabIndex = 9;
+            this.buttonzero.TabIndex = 10;
             this.buttonzero.Text = "0";
             this.buttonzero.UseVisualStyleBackColor = true;
             this.buttonzero.Click += new System.EventHandler(this.buttonzero_Click);
-            this.buttonzero.KeyUp += new System.Windows.Forms.KeyEventHandler(this.buttonzero_KeyUp);
+            this.buttonzero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttonsuma
             // 
             this.buttonsuma.Location = new System.Drawing.Point(254, 128);
             this.buttonsuma.Name = "buttonsuma";
             this.buttonsuma.Size = new System.Drawing.Size(75, 49);
-            this.buttonsuma.TabIndex = 10;
+            this.buttonsuma.TabIndex = 14;
             this.buttonsuma.Text = "+";
             this.buttonsuma.UseVisualStyleBackColor = true;
             this.buttonsuma.Click += new System.EventHandler(this.buttonsuma_Click);
+            this.buttonsuma.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttonresta
             // 
             this.buttonresta.Location = new System.Drawing.Point(254, 183);
             this.buttonresta.Name = "buttonresta";
             this.buttonresta.Size = new System.Drawing.Size(75, 49);
-            this.buttonresta.TabIndex = 11;
+            this.buttonresta.TabIndex = 13;
             this.buttonresta.Text = "-";
             this.buttonresta.UseVisualStyleBackColor = true;
             this.buttonresta.Click += new System.EventHandler(this.buttonresta_Click);
+            this.buttonresta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttonDivicion
             // 
@@ -185,29 +187,32 @@
             this.buttonDivicion.Name = "buttonDivicion";
             this.buttonDivicion.Size = new System.Drawing.Size(75, 49);
             this.buttonDivicion.TabIndex = 12;
-            this.buttonDivicion.Text = "/";
+            this.buttonDivicion.Text = "÷";
             this.buttonDivicion.UseVisualStyleBackColor = true;
             this.buttonDivicion.Click += new System.EventHandler(this.buttonDivicion_Click);
+            this.buttonDivicion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttonMultiplicacion
             // 
             this.buttonMultiplicacion.Location = new System.Drawing.Point(254, 293);
             this.buttonMultiplicacion.Name = "buttonMultiplicacion";
             this.buttonMultiplicacion.Size = new System.Drawing.Size(75, 49);
-            this.buttonMultiplicacion.TabIndex = 13;
+            this.buttonMultiplicacion.TabIndex = 11;
             this.buttonMultiplicacion.Text = "X";
             this.buttonMultiplicacion.UseVisualStyleBackColor = true;
             this.buttonMultiplicacion.Click += new System.EventHandler(this.buttonMultiplicacion_Click);
+            this.buttonMultiplicacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttonIgual
             // 
             this.buttonIgual.Location = new System.Drawing.Point(254, 348);
             this.buttonIgual.Name = "buttonIgual";
             this.buttonIgual.Size = new System.Drawing.Size(75, 49);
-            this.buttonIgual.TabIndex = 14;
+            this.buttonIgual.TabIndex = 16;
             this.buttonIgual.Text = "=";
             this.buttonIgual.UseVisualStyleBackColor = true;
             this.buttonIgual.Click += new System.EventHandler(this.buttonIgual_Click);
+            this.buttonIgual.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // textBoxPantalla
             // 
@@ -217,19 +222,21 @@
             this.textBoxPantalla.Name = "textBoxPantalla";
             this.textBoxPantalla.ReadOnly = true;
             this.textBoxPantalla.Size = new System.Drawing.Size(318, 102);
-            this.textBoxPantalla.TabIndex = 15;
+            this.textBoxPantalla.TabIndex = 0;
             this.textBoxPantalla.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBoxPantalla.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPantalla_KeyPress);
+       
+            this.textBoxPantalla.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttonborrar
             // 
             this.buttonborrar.Location = new System.Drawing.Point(8, 127);
             this.buttonborrar.Name = "buttonborrar";
             this.buttonborrar.Size = new System.Drawing.Size(75, 49);
-            this.buttonborrar.TabIndex = 16;
+            this.buttonborrar.TabIndex = 18;
             this.buttonborrar.Text = "DELETE";
             this.buttonborrar.UseVisualStyleBackColor = true;
             this.buttonborrar.Click += new System.EventHandler(this.buttonborrar_Click);
+            this.buttonborrar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttonReset
             // 
@@ -240,16 +247,18 @@
             this.buttonReset.Text = "C";
             this.buttonReset.UseVisualStyleBackColor = true;
             this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
+            this.buttonReset.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // buttonporcentaje
             // 
             this.buttonporcentaje.Location = new System.Drawing.Point(173, 128);
             this.buttonporcentaje.Name = "buttonporcentaje";
             this.buttonporcentaje.Size = new System.Drawing.Size(75, 49);
-            this.buttonporcentaje.TabIndex = 18;
+            this.buttonporcentaje.TabIndex = 15;
             this.buttonporcentaje.Text = "x2";
             this.buttonporcentaje.UseVisualStyleBackColor = true;
             this.buttonporcentaje.Click += new System.EventHandler(this.buttonporcentaje_Click);
+            this.buttonporcentaje.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Teclado);
             // 
             // FormCalculadora
             // 
@@ -277,7 +286,6 @@
             this.Controls.Add(this.buttonUno);
             this.Name = "FormCalculadora";
             this.Text = "Calculadora";
-
             this.ResumeLayout(false);
             this.PerformLayout();
 
