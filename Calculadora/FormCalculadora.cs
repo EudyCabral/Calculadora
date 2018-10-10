@@ -182,7 +182,7 @@ namespace Calculadora
                 num1 = double.Parse(textBoxPantalla.Text);
                 secuencia = true; }
         }
-
+        //
         private void buttonresta_Click(object sender, EventArgs e)
         {
             if (textBoxPantalla.Text == string.Empty)
