@@ -17,7 +17,7 @@ namespace Calculadora
         }
 
         bool secuencia = false;
-        decimal resultado, num1, num2;
+        double resultado, num1, num2;
         string operador,borrar;
 
         private void buttontres_Click(object sender, EventArgs e)
@@ -138,8 +138,9 @@ namespace Calculadora
             {
                 MessageBox.Show("Debe Introducir un Numero", "Validacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             } else {
+           //     textBoxPantalla.Text = "+";
                 operador = "+";
-                num1 = decimal.Parse(textBoxPantalla.Text);
+                num1 = double.Parse(textBoxPantalla.Text);
                 secuencia = true; }
         }
 
@@ -152,7 +153,7 @@ namespace Calculadora
             else
             {
                 operador = "-";
-                num1 = decimal.Parse(textBoxPantalla.Text);
+                num1 = double.Parse(textBoxPantalla.Text);
                 secuencia = true;
             }
         }
@@ -166,7 +167,7 @@ namespace Calculadora
             else
             {
                 operador = "/";
-                num1 = decimal.Parse(textBoxPantalla.Text);
+                num1 = double.Parse(textBoxPantalla.Text);
                 secuencia = true;
             }
         }
@@ -180,14 +181,14 @@ namespace Calculadora
             else
             {
                 operador = "x";
-                num1 = decimal.Parse(textBoxPantalla.Text);
+                num1 = double.Parse(textBoxPantalla.Text);
                 secuencia = true;
             }
         }
 
         private void buttonIgual_Click(object sender, EventArgs e)
         {
-            num2 = decimal.Parse(textBoxPantalla.Text);
+            num2 = double.Parse(textBoxPantalla.Text);
             if (operador == "+")
             {
                 resultado = num1 + num2;
@@ -213,6 +214,13 @@ namespace Calculadora
                 textBoxPantalla.Text = resultado.ToString();
                 secuencia = true;
             }
+
+            if (operador == "x2")
+            {
+                resultado = Math.Pow(num1,2);
+                textBoxPantalla.Text = resultado.ToString();
+                secuencia = true;
+            }
         }
 
         private void buttonborrar_Click(object sender, EventArgs e)
@@ -235,6 +243,115 @@ namespace Calculadora
             }
         }
 
+        private void buttonporcentaje_Click(object sender, EventArgs e)
+        {
+            if (textBoxPantalla.Text == string.Empty)
+            {
+                MessageBox.Show("Debe Introducir un Numero", "Validacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                operador = "x2";
+                num1 = double.Parse(textBoxPantalla.Text);
+                secuencia = true;
+            }
+        }
+
+        private void textBoxPantalla_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+
+        }
+
+        private void buttonUno_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.D1 || e.KeyCode == Keys.NumPad1)
+            {
+                buttonUno.PerformClick();
+            }
+
+        }
+
+        private void buttonDos_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.D2 || e.KeyCode == Keys.NumPad2)
+            {
+                buttonDos.PerformClick();
+            }
+        }
+
+        private void buttontres_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.D3 || e.KeyCode == Keys.NumPad3)
+            {
+                buttontres.PerformClick();
+            }
+        }
+
+        private void buttoncuatro_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.D4 || e.KeyCode == Keys.NumPad4)
+            {
+                buttoncuatro.PerformClick();
+            }
+        }
+
+        private void buttoncinco_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.D5 || e.KeyCode == Keys.NumPad5)
+            {
+                buttoncinco.PerformClick();
+            }
+        }
+
+        private void buttonseis_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.D6 || e.KeyCode == Keys.NumPad6)
+            {
+                buttonseis.PerformClick();
+            }
+        }
+
+        private void buttonsiete_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.D7 || e.KeyCode == Keys.NumPad7)
+            {
+                buttonsiete.PerformClick();
+            }
+        }
+
+        private void buttonocho_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.D8 || e.KeyCode == Keys.NumPad8)
+            {
+                buttonocho.PerformClick();
+            }
+        }
+
+        private void buttonnueve_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.D9 || e.KeyCode == Keys.NumPad9)
+            {
+                buttonnueve.PerformClick();
+            }
+        }
+
+        private void buttonzero_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.D0 || e.KeyCode == Keys.NumPad0)
+            {
+                buttonzero.PerformClick();
+
+            }
+        }
+
+        
+    
         private void buttonReset_Click(object sender, EventArgs e)
         {
             textBoxPantalla.Text = "0";
